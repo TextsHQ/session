@@ -239,8 +239,6 @@ function session(options) {
         touched = true
       }
 
-      console.log('setting session id', req.sessionID);
-
       // set cookie
       setcookie(res, name, req.sessionID, secrets[0], req.session.cookie.data);
     });
